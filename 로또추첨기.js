@@ -27,7 +27,7 @@ function winLottoNumber() {
             doc.classList.add("show-ani");
         }, i*1000)
     }
-    
+    //보너스 번호뽑기
     const js_win_bonus = document.querySelector('#js-win-bonus')
     const bonus_span = document.createElement('span')
     bonus_span.className = "js-circle-num" + i;
@@ -42,10 +42,10 @@ function winLottoNumber() {
 }
 
 function fillCompareBall(compareVal) {
-    document.querySelectorAll('#js-win-num > span').forEach((node) =>{
+    document.querySelectorAll('#js-win-num > span, #js-win-bonus > span').forEach((node) =>{
         if(compareVal.indexOf(parseInt(node.textContent,10)) > -1) {
             node.classList.add('js-background-right');
-            console.dir(node.classList)
+            // console.dir(node.classList)
         } else {
         }
     })
