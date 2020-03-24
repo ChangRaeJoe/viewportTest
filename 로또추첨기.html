@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="kr">
 <head>
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>로또 추첨기 예제</title>
     <style>
@@ -57,21 +57,25 @@
             background-color:rebeccapurple;
             font-weight: 800;
         }
-        .test{
-            display: inline-block;
-            width: 1280px;
-            height: 100px;
-            background-color: blueviolet;
+        img{
+            width:100%;
+            height:auto;
         }
+        @media screen and (min-width: 769px) {
+   /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+            img{
+                width:500px;
+                height: auto;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Hello Lotto</h1>
     </header>
-    <div class='test'>
-        hey
-    </div>
+    <img src="camel.jpg" alt="hello" >
     <div class="js-select-ball">
         <h2>7개의 공을 선택하세요!</h2>
     </div>
