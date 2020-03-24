@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>로또 추첨기 예제</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #js-win-num > span, #js-win-bonus > span{
+            opacity: 0;
+            margin: 8px 8px;
+            font-size: 32px;
+            font-weight: 1.5em;
+            border: 2px solid black;
+            display: inline-block;
+            width:3em;
+            height: 3em;
+            border-radius:50%;
+            line-height: 3em;
+            
+        }
+        .show-ani{
+            animation-name: show;
+            animation-duration: 4s;
+            animation-fill-mode: both;
+        }
+        @keyframes show {
+        from {opacity: 0;}
+        to {opacity: 1;}
+        }
+        .js-select-ball{
+            word-wrap: break-word;
+            margin: auto;
+            max-width: 600px;
+        }
+        .js-select-ball > span {
+            cursor: pointer;
+            margin: 8px 8px;
+            font-weight: 800;
+            font-size: 1.2em;
+            border-radius: 50%;
+            border: 2px solid black;
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            line-height: 2em;
+        }
+        .js-background-click{
+            background-color: cadetblue;
+        }
+        .js-select-ball > span:hover{
+            background-color:palevioletred;
+        }
+        .js-background-right{
+            background-color:rebeccapurple;
+            font-weight: 800;
+        }
+        img{
+            width:100%;
+            height:auto;
+        }
+        @media screen and (min-width: 769px) {
+   /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+            img{
+                width:500px;
+                height: auto;
+            }
+        }
+    .test{
+            width:2200px;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello Lotto</h1>
+    </header>
+    <div class="test">
+         hello world
+    </div>
+    <img src="camel.jpg" alt="hello" >
+    <div class="js-select-ball">
+        <h2>7개의 공을 선택하세요!</h2>
+    </div>
+
+    <div class="js-conpare-ball">
+        <button class="js-win-btn">당첨번호 확인</button>
+        
+    </div>
+
+    <div id="js-win-num">
+    </div>
+    <div id="js-win-bonus">
+    </div>
+    
+    <script src="./로또추첨기.js"></script>
+</body>
+</html>
